@@ -29,18 +29,15 @@ vector<vector<int>> power(vector<vector<int>> a, int t) {
 }
 
 int main() {
-    vector<vector<int>> m = {
-        {1, 1},
-        {1, 0}
-    };
-    I.resize(2, vector<int>(2, 0));
-    for (int i = 0; i < 2; i++) I[i][i] = 1;
-    auto res = power(m, 16);
-    for (int i = 0; i < 2; i++) {
-        for (int j = 0; j < 2; j++) {
-            cout << res[i][j] << ' ';
-        }
-        cout << '\n';
+  vector<vector<int>> m = {{1, 1}, {1, 0}};
+  I.resize(2, vector<int>(2, 0));
+  for (int i = 0; i < 2; i++)
+    I[i][i] = 1;
+  auto res = power(m, 16);
+  for (int i = 0; i < 2; i++) {
+    for (int j = 0; j < 2; j++) {
+      cout << res[i][j] << ' ';
     }
+    cout << '\n';
+  }
 }
-

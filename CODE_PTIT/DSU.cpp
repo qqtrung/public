@@ -13,15 +13,18 @@ void Init() {
 }
 
 int Find(int u) {
-  if (u == parent[u]) return u;
+  if (u == parent[u])
+    return u;
   return parent[u] = Find(parent[u]);
 }
 
 bool Union(int u, int v) {
   int ru = Find(u);
   int rv = Find(v);
-  if (ru == rv) return false;
-  if (sz[ru] < sz[rv]) swap(ru, rv);
+  if (ru == rv)
+    return false;
+  if (sz[ru] < sz[rv])
+    swap(ru, rv);
   parent[rv] = ru;
   sz[ru] += sz[rv];
   return true;
@@ -32,7 +35,8 @@ void solve() {
   Init();
   vector<pair<int, int>> c;
   for (int i = 1; i <= m; i++) {
-    int x, y; cin >> x >> y;
+    int x, y;
+    cin >> x >> y;
     c.push_back({x, y});
   }
   for (auto x : c) {
@@ -47,6 +51,7 @@ void solve() {
 int main() {
   int t;
   cin >> t;
-  while (t--) solve();
+  while (t--)
+    solve();
   return 0;
 }

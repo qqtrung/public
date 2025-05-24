@@ -29,7 +29,8 @@ void combination(int depth, int n, int k, vector<int> &a, vector<char> &val) {
   }
 }
 
-void permutation(int depth, int n, vector<int>& a, vector<char>& val, vector<int>& visited) {
+void permutation(int depth, int n, vector<int> &a, vector<char> &val,
+                 vector<int> &visited) {
   if (depth == n + 1) {
     for (int i = 1; i <= n; i++) {
       cout << a[i] << ":" << val[a[i]] << " ";
@@ -47,7 +48,8 @@ void permutation(int depth, int n, vector<int>& a, vector<char>& val, vector<int
   }
 }
 
-void xephau(int depth, int n, vector<vector<int>>& a, vector<int>& x, vector<int>& y, vector<int>& z) {
+void xephau(int depth, int n, vector<vector<int>> &a, vector<int> &x,
+            vector<int> &y, vector<int> &z) {
   if (depth == n + 1) {
     for (int i = 1; i <= n; i++) {
       for (int j = 1; j <= n; j++) {
@@ -73,14 +75,14 @@ void xephau(int depth, int n, vector<vector<int>>& a, vector<int>& x, vector<int
   }
 }
 
-void out(vector<int>& a) {
+void out(vector<int> &a) {
   for (int i : a) {
     cout << i << ' ';
   }
   cout << '\n';
 }
 
-void tapcon(int n, vector<int>& a) {
+void tapcon(int n, vector<int> &a) {
   int x = a.back();
   for (int i = x + 1; i <= n; i++) {
     a.push_back(i);
@@ -90,7 +92,7 @@ void tapcon(int n, vector<int>& a) {
   }
 }
 
-void phantich(int sum, int n, vector<int>& a) {
+void phantich(int sum, int n, vector<int> &a) {
   if (sum == n) {
     out(a);
     return;
@@ -106,20 +108,22 @@ void phantich(int sum, int n, vector<int>& a) {
 int main() {
 
   {
-  	cout << "binary: \n";
+    cout << "binary: \n";
     int n = 2;
-    vector<int> a; a.resize(n + 1);
+    vector<int> a;
+    a.resize(n + 1);
     vector<char> val = {'a', 'b'};
     for (int i = 0; i <= 1; i++) {
-      a[1] = i; 
+      a[1] = i;
       binary(2, n, a, val);
     }
   }
 
   {
-  	cout << "combination: \n";
+    cout << "combination: \n";
     int n = 3, k = 2;
-    vector<int> a; a.resize(k + 1);
+    vector<int> a;
+    a.resize(k + 1);
     vector<char> val = {'$', 'a', 'b', 'c', 'd'};
     for (int i = 1; i <= n - k + 1; i++) {
       a[1] = i;
@@ -130,9 +134,11 @@ int main() {
   {
     cout << "permutation: \n";
     int n = 3;
-    vector<int> a; a.resize(n + 1);
+    vector<int> a;
+    a.resize(n + 1);
     vector<char> val = {'$', 'a', 'b', 'c', 'd'};
-    vector<int> visited; visited.resize(n + 1, 0);
+    vector<int> visited;
+    visited.resize(n + 1, 0);
     for (int i = 1; i <= n; i++) {
       if (!visited[i]) {
         visited[i] = 1;
@@ -190,5 +196,3 @@ int main() {
 
   return 0;
 }
-
-
