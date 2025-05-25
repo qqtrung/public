@@ -25,6 +25,16 @@ void build(int parent, int child, char c, Node *&root) {
   build(parent, child, c, root->right);
 }
 
+Node *createBST(int a[], int start, int end) {
+  if (start > end)
+    return NULL;
+  int mid = (start + end) / 2;
+  Node *root = new Node(a[mid]);
+  root->left = createBST(a, start, mid - 1);
+  root->right = createBST(a, mid + 1, end);
+  return root;
+}
+
 void insert(Node *&root, int x) {
   if (root == NULL) {
     root = new Node(x);
@@ -64,6 +74,20 @@ void inOrder(Node *&root) {
   cout << root->data << ' ';
   if (root->right)
     inOrder(root->right);
+}
+
+void Right_Level_Oder(Node *root) {
+  queue<Node *> q;
+  q.push(root);
+  while (q.size()) {
+    Node *root = q.front();
+    q.pop();
+    cout << root->data << ' ';
+    if (root->right != NULL)
+      q.push(root->right);
+    if (root->left != NULL)
+      q.push(root->left);
+  }
 }
 
 void deleteNode(Node *&root, int val) {
