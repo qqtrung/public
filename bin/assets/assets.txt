@@ -1,0 +1,63 @@
+Texture 	TexStand 		images/megaman/stand64.png
+Texture 	TexRun 			images/megaman/run64.png
+Texture 	TexJump 		images/megaman/jump64.png
+Texture 	TexStandShoot 	images/megaman/standshoot64.png
+Texture 	TexRunShoot 	images/megaman/runshoot64.png
+Texture 	TexJumpShoot 	images/megaman/jumpshoot64.png
+Texture 	TexBuster 		images/megaman/buster.png
+Texture 	TexVictory 		images/megaman/victory.png
+Texture 	TexStart 		images/megaman/start.png
+Texture 	TexEnding 		images/megaman/ending.png
+Texture 	TexExplode 		images/misc/explosion128.png
+Texture 	TexCoin 		images/misc/coinspin.png
+Texture 	TexBrick 		images/mario/brick.png
+Texture 	TexQ 			images/mario/qfade.png
+Texture 	TexQ2 			images/mario/question2.png
+Texture 	TexPipeS 		images/mario/pipesmall.png
+Texture 	TexPipeT 		images/mario/pipetall.png
+Texture 	TexCloudB 		images/mario/cloudbig.png
+Texture 	TexCloudS 		images/mario/cloudsmall.png
+Texture 	TexBush 		images/mario/bush.png
+Texture 	TexBushBig 		images/mario/bushbig.png
+Texture 	TexGround 		images/mario/ground.png
+Texture 	TexBlock 		images/mario/block.png
+Texture 	TexPole 		images/mario/flagpole.png
+Texture 	TexPoleTop 		images/mario/flagtop.png
+Texture 	TexFlag 		images/mario/flag.png
+Texture 	TexCastle   	images/mario/castle.png
+Texture     TexGrass    	images/mario/grass.png
+Texture     TexGrassBig 	images/mario/grassbig.png
+Texture		TexEnemy		images/mario/enemy.png
+Texture		TexEnemySmall	images/mario/enemysmall.png
+Animation 	Stand 			TexStand 		1   0
+Animation 	Run 			TexRun 			4   10
+Animation 	Jump 			TexJump 		1   0
+Animation 	StandShoot 		TexStandShoot 	1   0
+Animation 	RunShoot 		TexRunShoot 	4   10
+Animation 	JumpShoot 		TexJumpShoot 	1   0
+Animation 	Buster 			TexBuster 		1   0
+Animation 	Explosion 		TexExplode 		48  2
+Animation 	Coin 			TexCoin 		8   6
+Animation 	Question 		TexQ 			3   6
+Animation 	Brick 			TexBrick 		1   0
+Animation 	Question2 		TexQ2 			1   0
+Animation 	PipeTall 		TexPipeT 		1   0
+Animation 	PipeSmall 		TexPipeS 		1   0
+Animation 	CloudBig 		TexCloudB 		1   0
+Animation 	CloudSmall 		TexCloudS 		1   0
+Animation 	Bush 			TexBush 		1   0
+Animation 	BushBig 		TexBushBig 		1   0
+Animation 	Ground 			TexGround 		1   0
+Animation 	Block 			TexBlock 		1   0
+Animation 	Flag 			TexFlag 		1   0
+Animation 	Pole 			TexPole 		1   0
+Animation 	PoleTop 		TexPoleTop 		1   0
+Animation 	Castle  		TexCastle   	1   0
+Animation   Grass       	TexGrass    	1   0
+Animation   GrassBig    	TexGrassBig 	1   0
+Animation   Enemy           TexEnemy        2   15
+Animation	EnemySmall      TexEnemySmall   10  3
+Animation   Victory         TexVictory      1   0
+Animation   Start         	TexStart        4   6
+Animation   Ending          TexEnding       4   10
+Font 		Consolas  		fonts/consolas.ttf
